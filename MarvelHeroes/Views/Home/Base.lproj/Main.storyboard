@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1x5-OA-Ssv">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Marvel Heroes-->
+        <scene sceneID="Cdf-S4-kU3">
+            <objects>
+                <viewController id="1Pn-Qf-UNe" customClass="HeroesViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKY-Gb-tUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tkG-ix-krO" userLabel="Heroes Collection View">
+                                <rect key="frame" x="0.0" y="140" width="375" height="672"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.21053617294520549" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FoY-ex-otZ">
+                                    <size key="itemSize" width="115" height="142"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HHk-We-0i9" firstAttribute="trailing" secondItem="tkG-ix-krO" secondAttribute="trailing" id="4LN-RR-veW"/>
+                            <constraint firstItem="tkG-ix-krO" firstAttribute="leading" secondItem="HHk-We-0i9" secondAttribute="leading" id="Adi-18-bX2"/>
+                            <constraint firstItem="HHk-We-0i9" firstAttribute="bottom" secondItem="tkG-ix-krO" secondAttribute="bottom" constant="-34" id="hde-K0-b22"/>
+                            <constraint firstItem="tkG-ix-krO" firstAttribute="top" secondItem="HHk-We-0i9" secondAttribute="top" id="pes-rD-csL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HHk-We-0i9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Marvel Heroes" id="u8B-Ik-2RF">
+                        <barButtonItem key="rightBarButtonItem" width="50" systemItem="search" id="Zl8-a5-Vgc">
+                            <inset key="imageInsets" minX="-51" minY="3" maxX="3" maxY="0.0"/>
+                            <inset key="largeContentSizeImageInsets" minX="12" minY="-100" maxX="0.0" maxY="-14"/>
+                            <connections>
+                                <segue destination="7p1-iy-N86" kind="show" identifier="SearchView" id="iHK-fZ-ygA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="heroesCollectionView" destination="tkG-ix-krO" id="UdK-6y-Wd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="day-1s-IPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-53.940886699507388"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="XIv-Mf-Fnz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="7p1-iy-N86" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9L7-bX-5oa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="-77"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AAw-vY-VqH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1x5-OA-Ssv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5Ik-Zi-TER">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Pn-Qf-UNe" kind="relationship" relationship="rootViewController" id="43E-b2-Ppz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lg-b0-rYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.19999999999999" y="-53.523238380809602"/>
+        </scene>
+    </scenes>
+</document>
