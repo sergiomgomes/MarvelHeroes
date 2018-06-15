@@ -12,4 +12,8 @@ class HeroDetailCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var sectionImageView: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
 }

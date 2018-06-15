@@ -12,4 +12,11 @@ class HeroDetailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heroSectionCollectionView: UICollectionView!
     
+    func setCollectionViewDelegateAndDataSource<T: UICollectionViewDataSource & UICollectionViewDelegate>(dataSourceAndDelegate: T, forRowAt: Int) {
+        self.heroSectionCollectionView.delegate = dataSourceAndDelegate
+        self.heroSectionCollectionView.dataSource = dataSourceAndDelegate
+        self.heroSectionCollectionView.tag = forRowAt
+        self.heroSectionCollectionView.reloadData()
+    }
+    
 }

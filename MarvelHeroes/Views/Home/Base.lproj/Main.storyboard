@@ -50,6 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="heroesCollectionView" destination="tkG-ix-krO" id="UdK-6y-Wd5"/>
+                        <segue destination="QQM-XV-cS2" kind="show" identifier="homeToDetail" id="RCB-Wv-hlH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="day-1s-IPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,6 +64,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9L7-bX-5oa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1650" y="-77"/>
+        </scene>
+        <!--HeroDetail-->
+        <scene sceneID="xsC-Mc-9Bl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HeroDetail" id="QQM-XV-cS2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbV-N2-wgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AAw-vY-VqH">

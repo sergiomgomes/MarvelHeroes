@@ -15,8 +15,10 @@ class HeroesViewController: UIViewController {
     fileprivate let cellReuseIdentifier = "heroCell"
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
-        heroesCollectionView.dataSource = self
+        super.viewDidLoad()
+        
+        self.heroesCollectionView.dataSource = self
+        self.heroesCollectionView.delegate = self
         
         self.registerCell()
         self.resizeCells()
@@ -40,7 +42,7 @@ class HeroesViewController: UIViewController {
 
 // MARK: - Heroes Collection View DataSource Methods
 
-extension HeroesViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension HeroesViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
@@ -55,9 +57,7 @@ extension HeroesViewController : UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let heroDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "heroDetailViewController") as! HeroDetailsViewController
-        
-        self.navigationController?.pushViewController(heroDetailViewController, animated: true)
+        performSegue(withIdentifier: "homeToDetail", sender: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

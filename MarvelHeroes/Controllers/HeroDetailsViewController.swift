@@ -20,6 +20,9 @@ class HeroDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.heroSectionsTableView.dataSource = self
+        self.heroSectionsTableView.delegate = self
     }
     
     enum TableSections: Int {
@@ -67,6 +70,17 @@ extension HeroDetailsViewController : UITableViewDataSource{
 
 extension HeroDetailsViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let heroDetailsTableViewCell = cell as? HeroDetailTableViewCell else { return }
+        
+        heroDetailsTableViewCell.setCollectionViewDelegateAndDataSource(dataSourceAndDelegate: self, forRowAt: indexPath.section)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.red
         (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.white
@@ -92,11 +106,16 @@ extension HeroDetailsViewController: UITableViewDelegate {
 extension HeroDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 10
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "detailsCollectionViewCell", for: indexPath) as! HeroDetailCollectionViewCell
+        cell.sectionImageView.image = UIImage(named: "bomber")
 
         return cell
     }
