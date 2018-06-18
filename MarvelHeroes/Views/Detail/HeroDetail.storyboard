@@ -174,6 +174,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWj-bh-eHf">
+                                        <rect key="frame" x="312" y="42" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GCJ-1M-2zK"/>
+                                            <constraint firstAttribute="width" constant="50" id="iZV-2O-5Rl"/>
+                                        </constraints>
+                                        <state key="normal" image="close-unselected"/>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="KEX-rS-kbU" eventType="touchUpInside" id="BzW-C2-IW7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="GMv-oA-NWq" secondAttribute="bottom" constant="412" id="1Mu-cx-29b"/>
@@ -184,8 +195,10 @@
                                     <constraint firstItem="YQM-z2-J1q" firstAttribute="top" secondItem="L9V-Ie-Yhb" secondAttribute="bottom" constant="20" id="hoW-ob-oTR"/>
                                     <constraint firstItem="GMv-oA-NWq" firstAttribute="centerX" secondItem="Cdk-n0-lpv" secondAttribute="centerX" id="hol-d5-fJa"/>
                                     <constraint firstItem="YQM-z2-J1q" firstAttribute="leading" secondItem="Cdk-n0-lpv" secondAttribute="leading" constant="15" id="iwd-hZ-9tz"/>
+                                    <constraint firstAttribute="trailing" secondItem="PWj-bh-eHf" secondAttribute="trailing" constant="13" id="lU4-Y3-XUE"/>
                                     <constraint firstItem="GMv-oA-NWq" firstAttribute="top" secondItem="Cdk-n0-lpv" secondAttribute="top" id="oVk-0E-yzo"/>
                                     <constraint firstAttribute="trailing" secondItem="YQM-z2-J1q" secondAttribute="trailing" constant="15" id="p4S-Zg-NEW"/>
+                                    <constraint firstItem="PWj-bh-eHf" firstAttribute="top" secondItem="Cdk-n0-lpv" secondAttribute="top" constant="42" id="vrI-qF-sML"/>
                                     <constraint firstItem="L9V-Ie-Yhb" firstAttribute="top" secondItem="GMv-oA-NWq" secondAttribute="bottom" id="xHN-Fp-2ae"/>
                                 </constraints>
                             </scrollView>
@@ -212,5 +225,6 @@
     </scenes>
     <resources>
         <image name="bomber" width="850" height="850"/>
+        <image name="close-unselected" width="50" height="50"/>
     </resources>
 </document>

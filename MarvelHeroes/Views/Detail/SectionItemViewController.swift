@@ -33,4 +33,7 @@ class SectionItemViewController: UIViewController {
     
     // MARK: - Navigation
 
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
