@@ -12,23 +12,32 @@ class HeroesViewController: UIViewController {
 
     @IBOutlet var heroesCollectionView: UICollectionView!
     
-    fileprivate let cellReuseIdentifier = "heroCell"
+    let dataSource = HeroDataSource()
+    
+    lazy var viewModel : HeroViewModel = {
+        let viewModel = HeroViewModel(dataSource: dataSource)
+        return viewModel
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.heroesCollectionView.dataSource = self
-        self.heroesCollectionView.delegate = self
-        
         self.registerCell()
         self.resizeCells()
+        
+        self.heroesCollectionView.delegate = self
+        
+        self.heroesCollectionView.dataSource = self.dataSource
+        self.dataSource.data.addAndNotify(observer: self) { [weak self] in
+            self?.heroesCollectionView.reloadData()
+        }
     }
     
     // MARK: - View configuration
     
     func registerCell() {
         let nib = UINib(nibName: "HeroCollectionViewCell", bundle: nil)
-        heroesCollectionView.register(nib, forCellWithReuseIdentifier: cellReuseIdentifier)
+        heroesCollectionView.register(nib, forCellWithReuseIdentifier: "heroCell")
     }
     
     func resizeCells(){
@@ -40,21 +49,9 @@ class HeroesViewController: UIViewController {
     }
 }
 
-// MARK: - Heroes Collection View DataSource Methods
+// MARK: - Heroes Collection View Delegate Methods
 
-extension HeroesViewController : UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! HeroCollectionViewCell
-        cell.heroImageView.image = UIImage(named: "bomber")
-        
-        return cell
-    }
+extension HeroesViewController : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "homeToDetail", sender: indexPath)

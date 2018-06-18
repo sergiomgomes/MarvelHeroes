@@ -19,9 +19,17 @@
 		496965D320C9F37F00CE70E6 /* HeroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496965D120C9F37F00CE70E6 /* HeroCollectionViewCell.xib */; };
 		496965D520CF45F500CE70E6 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496965D420CF45F500CE70E6 /* Search.storyboard */; };
 		496965DA20D1C0DC00CE70E6 /* HeroDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496965D920D1C0DC00CE70E6 /* HeroDetail.storyboard */; };
-		496965DC20D1CD6400CE70E6 /* HeroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496965DB20D1CD6400CE70E6 /* HeroDetailsViewController.swift */; };
 		496965DE20D1D1C800CE70E6 /* HeroDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496965DD20D1D1C800CE70E6 /* HeroDetailTableViewCell.swift */; };
 		496965E020D1D29D00CE70E6 /* HeroDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496965DF20D1D29D00CE70E6 /* HeroDetailCollectionViewCell.swift */; };
+		496DCD9F20D563F50070AD5D /* SectionItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCD9E20D563F50070AD5D /* SectionItemViewController.swift */; };
+		496DCDA920D586370070AD5D /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDA820D586370070AD5D /* Hero.swift */; };
+		496DCDAB20D586920070AD5D /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDAA20D586920070AD5D /* Comics.swift */; };
+		496DCDAD20D5873A0070AD5D /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDAC20D5873A0070AD5D /* Picture.swift */; };
+		496DCDAF20D5971E0070AD5D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDAE20D5971E0070AD5D /* Observable.swift */; };
+		496DCDB120D597B90070AD5D /* HeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDB020D597B90070AD5D /* HeroViewModel.swift */; };
+		496DCDB320D5981A0070AD5D /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDB220D5981A0070AD5D /* GenericDataSource.swift */; };
+		496DCDB520D598F60070AD5D /* HeroDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDB420D598F60070AD5D /* HeroDataSource.swift */; };
+		496DCDBB20D85F0A0070AD5D /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496DCDBA20D85F0A0070AD5D /* HeroDetailViewController.swift */; };
 		49E5F65420C9DEF100FAC9D9 /* apiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49E5F65320C9DEF100FAC9D9 /* apiKeys.plist */; };
 		49E5F65720C9E1A500FAC9D9 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5F65620C9E1A500FAC9D9 /* AppConfig.swift */; };
 		49E5F65920C9E24800FAC9D9 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5F65820C9E24800FAC9D9 /* APIKeys.swift */; };
@@ -63,9 +71,17 @@
 		496965D120C9F37F00CE70E6 /* HeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCollectionViewCell.xib; sourceTree = "<group>"; };
 		496965D420CF45F500CE70E6 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		496965D920D1C0DC00CE70E6 /* HeroDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeroDetail.storyboard; sourceTree = "<group>"; };
-		496965DB20D1CD6400CE70E6 /* HeroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewController.swift; sourceTree = "<group>"; };
 		496965DD20D1D1C800CE70E6 /* HeroDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailTableViewCell.swift; sourceTree = "<group>"; };
 		496965DF20D1D29D00CE70E6 /* HeroDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		496DCD9E20D563F50070AD5D /* SectionItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemViewController.swift; sourceTree = "<group>"; };
+		496DCDA820D586370070AD5D /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		496DCDAA20D586920070AD5D /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		496DCDAC20D5873A0070AD5D /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		496DCDAE20D5971E0070AD5D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		496DCDB020D597B90070AD5D /* HeroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewModel.swift; sourceTree = "<group>"; };
+		496DCDB220D5981A0070AD5D /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		496DCDB420D598F60070AD5D /* HeroDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDataSource.swift; sourceTree = "<group>"; };
+		496DCDBA20D85F0A0070AD5D /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 		49E5F65320C9DEF100FAC9D9 /* apiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apiKeys.plist; sourceTree = "<group>"; };
 		49E5F65620C9E1A500FAC9D9 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		49E5F65820C9E24800FAC9D9 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
@@ -119,11 +135,10 @@
 		4927282B20C88D0B0042270F /* MarvelHeroes */ = {
 			isa = PBXGroup;
 			children = (
-				49E5F65520C9E16300FAC9D9 /* Utils */,
-				49E5F65220C9DE8100FAC9D9 /* Views */,
-				49E5F65120C9DE7400FAC9D9 /* Controllers */,
-				49E5F65020C9DA8700FAC9D9 /* Networking */,
 				49E5F64F20C9DA7600FAC9D9 /* Models */,
+				49E5F65220C9DE8100FAC9D9 /* Views */,
+				496DCDA020D582C60070AD5D /* ViewModels */,
+				496DCDA120D582E70070AD5D /* Services */,
 				4927282C20C88D0B0042270F /* AppDelegate.swift */,
 				4927283620C88D0B0042270F /* Assets.xcassets */,
 				4927283820C88D0B0042270F /* LaunchScreen.storyboard */,
@@ -152,21 +167,12 @@
 			path = MarvelHeroesUITests;
 			sourceTree = "<group>";
 		};
-		496965CB20C9ED9700CE70E6 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				496965D020C9F37F00CE70E6 /* HeroCollectionViewCell.swift */,
-				496965D120C9F37F00CE70E6 /* HeroCollectionViewCell.xib */,
-				496965DD20D1D1C800CE70E6 /* HeroDetailTableViewCell.swift */,
-				496965DF20D1D29D00CE70E6 /* HeroDetailCollectionViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		496965D620D1C09D00CE70E6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				496DCDA620D583B00070AD5D /* Cell */,
 				4927283020C88D0B0042270F /* Main.storyboard */,
+				496965C920C9ECA300CE70E6 /* HeroesViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -174,7 +180,10 @@
 		496965D720D1C0AA00CE70E6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				496DCDA720D583C00070AD5D /* Cell */,
 				496965D920D1C0DC00CE70E6 /* HeroDetail.storyboard */,
+				496DCD9E20D563F50070AD5D /* SectionItemViewController.swift */,
+				496DCDBA20D85F0A0070AD5D /* HeroDetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -187,47 +196,86 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		49E5F64F20C9DA7600FAC9D9 /* Models */ = {
+		496DCDA020D582C60070AD5D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				496DCDB020D597B90070AD5D /* HeroViewModel.swift */,
+				496DCDB220D5981A0070AD5D /* GenericDataSource.swift */,
+				496DCDB420D598F60070AD5D /* HeroDataSource.swift */,
 			);
-			path = Models;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		49E5F65020C9DA8700FAC9D9 /* Networking */ = {
+		496DCDA120D582E70070AD5D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				496DCDA220D583070070AD5D /* Network */,
+				496DCDA420D583290070AD5D /* Parser */,
+				496DCDA320D583230070AD5D /* Result */,
+				49E5F65620C9E1A500FAC9D9 /* AppConfig.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		496DCDA220D583070070AD5D /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				49E5F65820C9E24800FAC9D9 /* APIKeys.swift */,
 			);
-			path = Networking;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		49E5F65120C9DE7400FAC9D9 /* Controllers */ = {
+		496DCDA320D583230070AD5D /* Result */ = {
 			isa = PBXGroup;
 			children = (
-				496965C920C9ECA300CE70E6 /* HeroesViewController.swift */,
-				496965DB20D1CD6400CE70E6 /* HeroDetailsViewController.swift */,
 			);
-			path = Controllers;
+			path = Result;
+			sourceTree = "<group>";
+		};
+		496DCDA420D583290070AD5D /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		496DCDA620D583B00070AD5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				496965D120C9F37F00CE70E6 /* HeroCollectionViewCell.xib */,
+				496965D020C9F37F00CE70E6 /* HeroCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		496DCDA720D583C00070AD5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				496965DF20D1D29D00CE70E6 /* HeroDetailCollectionViewCell.swift */,
+				496965DD20D1D1C800CE70E6 /* HeroDetailTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		49E5F64F20C9DA7600FAC9D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				496DCDA820D586370070AD5D /* Hero.swift */,
+				496DCDAA20D586920070AD5D /* Comics.swift */,
+				496DCDAC20D5873A0070AD5D /* Picture.swift */,
+				496DCDAE20D5971E0070AD5D /* Observable.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		49E5F65220C9DE8100FAC9D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				496965D820D1C0B100CE70E6 /* Search */,
-				496965D720D1C0AA00CE70E6 /* Detail */,
 				496965D620D1C09D00CE70E6 /* Home */,
-				496965CB20C9ED9700CE70E6 /* Cells */,
+				496965D720D1C0AA00CE70E6 /* Detail */,
+				496965D820D1C0B100CE70E6 /* Search */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		49E5F65520C9E16300FAC9D9 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				49E5F65620C9E1A500FAC9D9 /* AppConfig.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,15 +416,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496DCDB520D598F60070AD5D /* HeroDataSource.swift in Sources */,
 				49E5F65720C9E1A500FAC9D9 /* AppConfig.swift in Sources */,
 				4927282D20C88D0B0042270F /* AppDelegate.swift in Sources */,
-				496965DC20D1CD6400CE70E6 /* HeroDetailsViewController.swift in Sources */,
 				496965E020D1D29D00CE70E6 /* HeroDetailCollectionViewCell.swift in Sources */,
+				496DCDB120D597B90070AD5D /* HeroViewModel.swift in Sources */,
 				49E5F65920C9E24800FAC9D9 /* APIKeys.swift in Sources */,
+				496DCD9F20D563F50070AD5D /* SectionItemViewController.swift in Sources */,
+				496DCDA920D586370070AD5D /* Hero.swift in Sources */,
 				496965DE20D1D1C800CE70E6 /* HeroDetailTableViewCell.swift in Sources */,
 				4927283520C88D0B0042270F /* MarvelHeroes.xcdatamodeld in Sources */,
+				496DCDB320D5981A0070AD5D /* GenericDataSource.swift in Sources */,
 				496965D220C9F37F00CE70E6 /* HeroCollectionViewCell.swift in Sources */,
+				496DCDAF20D5971E0070AD5D /* Observable.swift in Sources */,
+				496DCDAD20D5873A0070AD5D /* Picture.swift in Sources */,
 				496965CA20C9ECA300CE70E6 /* HeroesViewController.swift in Sources */,
+				496DCDAB20D586920070AD5D /* Comics.swift in Sources */,
+				496DCDBB20D85F0A0070AD5D /* HeroDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

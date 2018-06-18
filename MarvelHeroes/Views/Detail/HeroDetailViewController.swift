@@ -9,7 +9,7 @@
 import UIKit
 
 class HeroDetailsViewController: UIViewController {
-
+    
     // MARK: - Outlet
     
     @IBOutlet weak var heroImageView: UIImageView!
@@ -85,7 +85,7 @@ extension HeroDetailsViewController: UITableViewDelegate {
         (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.red
         (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.white
     }
-
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case TableSections.comics.rawValue:
@@ -116,7 +116,11 @@ extension HeroDetailsViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "detailsCollectionViewCell", for: indexPath) as! HeroDetailCollectionViewCell
         cell.sectionImageView.image = UIImage(named: "bomber")
-
+        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showSectionItem", sender: indexPath)
     }
 }
